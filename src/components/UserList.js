@@ -20,7 +20,7 @@ function UserList() {
   }
   return (
     <div style={{display:"flex", justifyContent:"start", flexWrap:"wrap"}}>
-      {users.map((user, id) => {
+      {users && users.map((user, id) => {
         return (
           <div>
             <MDBCard style={{ maxWidth: "540px" }}>
